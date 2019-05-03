@@ -12,7 +12,8 @@ public class Curso {
     private Integer quantidadeMaximaDeAlunos;
     private List<Aluno> alunosMatriculados;
 
-
+    public Curso() {
+    }
 
     public Curso(String nome, Integer codigoDeCurso, ProfessorTitular professorTitular,
                  ProfessorAdjunto professorAdjunto, Integer quantidadeMaximaDeAlunos, List<Aluno> alunosMatriculados) {
@@ -24,9 +25,23 @@ public class Curso {
         this.alunosMatriculados = alunosMatriculados;
     }
 
-    public Curso() {
+
+
+    public String getNome() {
+        return nome;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Integer getCodigoDeCurso() {
+        return codigoDeCurso;
+    }
+
+    public void setCodigoDeCurso(Integer codigoDeCurso) {
+        this.codigoDeCurso = codigoDeCurso;
+    }
 
     public ProfessorTitular getProfessorTitular() {
         return professorTitular;
@@ -59,6 +74,8 @@ public class Curso {
     public void setAlunosMatriculados(List<Aluno> alunosMatriculados) {
         this.alunosMatriculados = alunosMatriculados;
     }
+
+
 
 
     public Boolean adicionarUmAluno (Aluno umAluno) {

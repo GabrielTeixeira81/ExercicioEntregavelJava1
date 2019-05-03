@@ -56,14 +56,14 @@ public class DigitalHouseManager {
 
     }
 
-    public void excluirCurso(Integer codigoCurso) {
-        List<Curso> removercursos = new ArrayList<>();
+    public void excluirCurso( Integer codigoDeCurso) {
+        Curso removercursos = null
         for (Curso curso : cursos){
-            if (curso.getCodigoCurso() != codigoCurso){
-            curso.add(curso);
+            if (Curso.getcodigoDeCurso() == codigoDeCurso){
+            cursoEncontrado = curso;
             }
         }
-        cursos.remove(codigoCurso);
+            cursos = removercursos;
     }
 
     public void registrarProfessorAdjunto(String nome, String sobreNome, Integer codigoProfessor, Integer quantidadeDeHoras) {
